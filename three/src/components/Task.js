@@ -1,13 +1,21 @@
 import React from 'react';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 const Task = (props) =>{
-    return(
-        <div className="card" style={{backgroundColor: props.done ? 'lightgrey' : '#5bb4c4'}}>
-            <p className="title">{props.title}</p>
-            <p>Due:{props.deadline}</p>
-            <p>{props.children}</p>
-            <button onClick={props.markDone} className='doneButton'>Done</button>
-            <button className='deleteButton' onClick={props.deleteTask}>Delete</button>
-        </div>
-    )
+    <Grid
+    item
+    key={props.id}
+    xs={12}
+    md={4}
+>
+
+</Grid>
+
 }
 export default Task;
